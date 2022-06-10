@@ -1,8 +1,4 @@
 version: 2.1
-  
-
-            
-
 jobs:
   deploy-backend:
     docker:
@@ -28,12 +24,8 @@ jobs:
             apk install -y nodejs
             apk install -y tar gzip
       
-
- 
-
- 
 workflows:
-    jobs:
-      - deploy-backend:
+  jobs:
+    - deploy-backend:
       
      
